@@ -10,7 +10,7 @@ https://power-pred.herokuapp.com/
 1. HTML-CSS, Js for building Front end templates
 2. Flask for Backend of the application
 3. Facebook's Prophet algorithm for building the model of Time Series Forecasting
-4. Heroku for deployment (Soon to be uploaded on IBM Cloud too) 
+4. Heroku for deployment (Soon to be deployed on IBM Cloud too) 
 
 ## Dataset
 https://www.kaggle.com/berkerisen/wind-turbine-scada-dataset
