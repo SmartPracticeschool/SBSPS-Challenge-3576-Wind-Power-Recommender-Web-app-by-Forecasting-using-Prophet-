@@ -4,7 +4,7 @@
 **By Team Epoch**
 
 ## Demo:
-https://power-pred.herokuapp.com/
+https://predictor-epoch.herokuapp.com/
 
 ## Tech Stack:
 1. HTML-CSS, Js for building Front end templates
