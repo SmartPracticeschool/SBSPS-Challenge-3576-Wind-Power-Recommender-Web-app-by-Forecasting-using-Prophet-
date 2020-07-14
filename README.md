@@ -16,6 +16,6 @@ https://power-pred.herokuapp.com
 https://www.kaggle.com/berkerisen/wind-turbine-scada-dataset
 
 ## What does it do?
-This is a Web app for Real time Forecasting. We used the value in columns  “Wind Direction, Wind Speed" as features and "Active Power" as labels for the model to forecast upto 72 hours in Real Time!
+This is a Web app for Real time Forecasting. We used the value in columns  “Wind Direction (in degrees), Wind Speed (in m/s), Air Pressure (in atm)" as features and "Active Power" as labels for the model to forecast upto 72 hours in Real Time!
 
 #### PS: Code will be uploaded when mentors instruct us!
