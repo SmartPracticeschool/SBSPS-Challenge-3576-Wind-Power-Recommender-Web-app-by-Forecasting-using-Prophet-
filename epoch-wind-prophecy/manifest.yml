@@ -1,0 +1,5 @@
+applications:
+- name: PowerPredictor
+  random-route: true
+  memory: 256M
+  command: python app.py

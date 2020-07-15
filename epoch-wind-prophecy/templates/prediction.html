@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chrset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/prediction-styles.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pred-mobile-styles.css') }}" />
+        <link href='https://fonts.googleapis.com/css?family=Yatra One' rel='stylesheet'>
+    
+        <title>Prediction</title>
+    </head>
+
+    <body background="static/101.jpg">
+        <!--Side Menu-->
+        <div class="container">
+            <nav class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="{{ url_for('welcome') }}" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ url_for('pred') }}" class="nav-link"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> APP</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ url_for('dash') }}" class="nav-link"><i class="fa fa-line-chart" aria-hidden="true"></i> DASHBOARD</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!--Text-->
+            <div class="wrapper">
+                <div class="title">
+                <!-- <div class="center"> -->
+                    <h1>LET'S SEE THE FUTURE !</h1>
+                </div>
+                <form action="/predict" method="post">
+                <div class="contact-form">
+                    <div class="input-fields">
+                        <input type="text" class='input' placeholder="Pressure (atm)" name="c" required/>
+                        <input type="text" class='input' placeholder="Wind Speed (m/s)" name="a" required/>
+                        <input type="text" class='input' placeholder="Wind Direction (degrees)" name="b" required/>
+                            <select class='input' id="date" name="date" placeholder="Number of Hours" required>
+                                <option value="2020-07-01 00:50:00">After 1 hour</option>
+                                <option value="2020-07-01 01:50:00">After 2 hours</option>
+                                <option value="2020-07-01 02:50:00">After 3 hours</option>
+                                <option value="2020-07-01 03:50:00">After 4 hours</option>
+                                <option value="2020-07-01 04:50:00">After 5 hours</option>
+                                <option value="2020-07-01 05:50:00">After 6 hours</option>
+                                <option value="2020-07-01 06:50:00">After 7 hours</option>
+                                <option value="2020-07-01 07:50:00">After 8 hours</option>
+                                <option value="2020-07-01 08:50:00">After 9 hours</option>
+                                <option value="2020-07-01 09:50:00">After 10 hours</option>
+                                <option value="2020-07-01 10:50:00">After 11 hours</option>
+                                <option value="2020-07-01 11:50:00">After 12 hours</option>
+                                <option value="2020-07-01 12:50:00">After 13 hours</option>
+                                <option value="2020-07-01 13:50:00">After 14 hours</option>
+                                <option value="2020-07-01 14:50:00">After 15 hours</option>
+                                <option value="2020-07-01 15:50:00">After 16 hours</option>
+                                <option value="2020-07-01 16:50:00">After 17 hours</option>
+                                <option value="2020-07-01 17:50:00">After 18 hours</option>
+                                <option value="2020-07-01 18:50:00">After 19 hours</option>
+                                <option value="2020-07-01 19:50:00">After 20 hours</option>
+                                <option value="2020-07-01 20:50:00">After 21 hours</option>
+                                <option value="2020-07-01 21:50:00">After 22 hours</option>
+                                <option value="2020-07-01 22:50:00">After 23 hours</option>
+                                <option value="2020-07-01 23:50:00">After 24 hours</option>
+                                <option value="2020-07-02 00:50:00">After 25 hours</option>
+                                <option value="2020-07-02 01:50:00">After 26 hours</option>
+                                <option value="2020-07-02 02:50:00">After 27 hours</option>
+                                <option value="2020-07-02 03:50:00">After 28 hours</option>
+                                <option value="2020-07-02 04:50:00">After 29 hours</option>
+                                <option value="2020-07-02 05:50:00">After 30 hours</option>
+                                <option value="2020-07-02 06:50:00">After 31 hours</option>
+                                <option value="2020-07-02 07:50:00">After 32 hours</option>
+                                <option value="2020-07-02 08:50:00">After 33 hours</option>
+                                <option value="2020-07-02 09:50:00">After 34 hours</option>
+                                <option value="2020-07-02 10:50:00">After 35 hours</option>
+                                <option value="2020-07-02 11:50:00">After 36 hours</option>
+                                <option value="2020-07-02 12:50:00">After 37 hours</option>
+                                <option value="2020-07-02 13:50:00">After 38 hours</option>
+                                <option value="2020-07-02 14:50:00">After 39 hours</option>
+                                <option value="2020-07-02 15:50:00">After 40 hours</option>
+                                <option value="2020-07-02 16:50:00">After 41 hours</option>
+                                <option value="2020-07-02 17:50:00">After 42 hours</option>
+                                <option value="2020-07-02 18:50:00">After 43 hours</option>
+                                <option value="2020-07-02 19:50:00">After 44 hours</option>
+                                <option value="2020-07-02 20:50:00">After 45 hours</option>
+                                <option value="2020-07-02 21:50:00">After 46 hours</option>
+                                <option value="2020-07-02 22:50:00">After 47 hours</option>
+                                <option value="2020-07-02 23:50:00">After 48 hours</option>
+                                <option value="2020-07-03 00:50:00">After 49 hours</option>
+                                <option value="2020-07-03 01:50:00">After 50 hours</option>
+                                <option value="2020-07-03 02:50:00">After 51 hours</option>
+                                <option value="2020-07-03 03:50:00">After 52 hours</option>
+                                <option value="2020-07-03 04:50:00">After 53 hours</option>
+                                <option value="2020-07-03 05:50:00">After 54 hours</option>
+                                <option value="2020-07-03 06:50:00">After 55 hours</option>
+                                <option value="2020-07-03 07:50:00">After 56 hours</option>
+                                <option value="2020-07-03 08:50:00">After 57 hours</option>
+                                <option value="2020-07-03 09:50:00">After 58 hours</option>
+                                <option value="2020-07-03 10:50:00">After 59 hours</option>
+                                <option value="2020-07-03 11:50:00">After 60 hours</option>
+                                <option value="2020-07-03 12:50:00">After 61 hours</option>
+                                <option value="2020-07-03 13:50:00">After 62 hours</option>
+                                <option value="2020-07-03 14:50:00">After 63 hours</option>
+                                <option value="2020-07-03 15:50:00">After 64 hours</option>
+                                <option value="2020-07-03 16:50:00">After 65 hours</option>
+                                <option value="2020-07-03 17:50:00">After 66 hours</option>
+                                <option value="2020-07-03 18:50:00">After 67 hours</option>
+                                <option value="2020-07-03 19:50:00">After 68 hours</option>
+                                <option value="2020-07-03 20:50:00">After 69 hours</option>
+                                <option value="2020-07-03 21:50:00">After 70 hours</option>
+                                <option value="2020-07-03 22:50:00">After 71 hours</option>
+                                <option value="2020-07-03 23:50:00">After 72 hours</option>
+                               </select>
+                            <p><br>
+                             <center>   <input type="submit" value="Predict the Future!!" style="height: 50px; width: 60%; border-radius: 15px; font-size: 20px; font-weight: 450; border: 2px solid rgb(42, 29, 1);transition: 0.3s; transition-property: inherit;"/>                   
+                             </center></p>
+                    </div> 
+                   
+                </form>
+            </div>
+                </div> 
+            </div>
+            <p> <center>     <div class="out" style="width:40%;font-weight: 800; margin-top: -10rem;padding: 0; font-size: 40px; border-radius: 100px; border: 2.5px solid rgb(42, 4, 4);color: rgb(17, 12, 1);">
+              <h3> <-Predicted Power-> </h3> {{dks}}
+               </center>   </p> </div>
+            
+                
+                   
+                    <!-- <div class="graph">
+                    <embed type='image/svg+xml' src={{graph|safe}} style="width:1000px; padding-top: 35px;">
+                    </div>
+                </p>
+                
+    
+               
+        <div class="table" style="border-collapse: collapse;">
+            {% for table in tables %}
+           
+            <h2> {{titles[loop.index]}} </h2>
+          <h3>  {{ table|safe }}</h3>
+            
+            {% endfor %}
+        </div>-->
+        <script src="static/script.js"></script>
+    </body>
+</html> 

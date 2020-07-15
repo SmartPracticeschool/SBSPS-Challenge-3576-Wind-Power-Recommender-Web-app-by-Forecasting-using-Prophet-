@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>
+    Wind Prophecy by Team Epoch
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Nucleo Icons -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nucleo-icons.css') }}" />
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black-dashboard.min.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black-dashboard.css.map') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black-dashboard.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/demo.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='js/demo.js') }}" />
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar">
+  
+      <div class="sidebar-wrapper" style="font-size:3rem;">
+
+        <ul class="nav" >
+            <li class="active">
+                <a href="{{ url_for('welcome') }}">
+                  <i style="font-size: 15px; font-weight: 500;" class="fa fa-cloud"></i>
+                  <p style="font-size: 16px; font-weight: 600; ">Wind Prophecy</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="{{ url_for('dash') }}">
+                  <i style="font-size: 15px; font-weight: 500;" class="fa fa-line-chart"></i> 
+                  <p style="font-size: 16px; font-weight: 600;"> Dashboard</p>
+                </a>
+              </li>
+    
+              <li>
+                <a href="{{ url_for('pred') }}">
+                  <i style="font-size: 15px; font-weight: 500;" class="fa fa-rocket"></i>
+                  <p style="font-size: 16px; font-weight: 600;"> Go To App</p>
+                </a>
+              </li>
+    
+              <li class="active-pro">
+                <a href="#about">
+                  <i style="font-size: 12px; font-weight: 500;" class="fa fa-forward"></i>
+                  <p style="font-size: 13px; font-weight: 600;"> About Us</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Wind Prophecy by Team Epoch</a>
+            <br>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+
+             
+              <li class="dropdown nav-item">
+
+                
+              </li>
+              <li class="separator d-lg-none"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <div class="row">
+                  <div class="col-sm-6 text-left">
+                    <!-- <h5 class="card-category">Wind Prophecy</h5> -->
+                    <center><h2 class="card-title">Welcome to Wind Prophecy App!</h2></center>
+                    
+                  </div>
+      <div class="row">
+      <!-- <footer class="footer"> -->
+        <div class="container-fluid">
+            <li class="nav-item">
+              <a href="https://smartinternz.com/index.php/ibm-hack-challenge-2020" class="nav-link">
+                About the IBM Challenge
+              </a>
+            </li>
+        </div>
+      <!-- </footer> -->
+  <div class='lol'>
+      <div>
+    <center> <p style="font-weight: 300; font-size: 17px; padding-top: 80px;"> <b>Wind Prophecy</b> is a web app meant to support the existing Power Grid by providing Real-Time Forecasts of Power produced by Wind Farms across the 4 major metropolitan cities of India.<br>
+        We have designed a Time Series Forecasting algorithm specifically for this task! <br>
+        Anyone can use this web app because it supports the Renewable Energy Dream of a Sustainable India.
+    </p></center></div>
+ <div>
+    <img src='static/3.jpg' style="border-radius: 50px;">
+</div></div></div></div>
+ <h1 style="padding-top: 80px;"><center>ABOUT TEAM EPOCH</center></h1> 
+ <center> 
+<div class="about" id="about">
+    <div class="person1">
+        <img src="static/dharana.jpg">
+        <h3>DHARANA</h3>
+        <p>| Data Science and UI |</p>
+        <a href="https://www.linkedin.com/in/dharana-b90b2617b/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/Dharana23"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="person2">
+        <img src="static/kshitij.jpg">
+        <h3>KSHITIJ SINGH</h3>
+        <p>| Backend Developer |</p>
+        <a href="https://www.linkedin.com/in/kshitij-singh-b103ab1b1"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/kshitijsinghh"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="person3">
+        <img src="static/shashwat.jpg">
+        <h3>SHASHWAT PANDEY</h3>
+        <p>| Data Science and UI |</p>
+        <a href="https://www.linkedin.com/in/shaxpy28/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/Shaxpy"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+    </div></center> 
+</div>
+<script src="static/script.js"></script>
+<script>
+    // window.addEventListener('scroll', function() {
+    //     if (window.scrollY > 250) {
+    //         document.querySelector('.navbar').style.opacity = 0.9;
+    //     } else {
+    //         document.querySelector('.navbar').style.opacity = 1;
+    //     }
+    // });
+    
+    // Smooth Scrolling
+    $('about a').on('click', function(event) {
+        if (this.hash !== '') {
+            event.preventDefault();
+    
+            const hash = this.hash;
+    
+            $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 100
+                },
+                800
+            );
+        }
+    });
+</script>
+ 
+</body>
+</html>
