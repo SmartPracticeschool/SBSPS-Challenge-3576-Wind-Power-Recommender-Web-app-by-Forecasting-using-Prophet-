@@ -1,7 +1,7 @@
 ## Solution for IBM Hack Challenge 3576
 
 # Wind Prophecy App
-**By Team Epoch**
+### **By Team Epoch**
 
 ## Demo:
 https://epoch-wind-prophecy.herokuapp.com/
