@@ -20,3 +20,4 @@ https://www.nrel.gov/grid/wind-integration-data.html
 This is a Web app for Real time Forecasting. We used the value in columns  “Wind Direction (in degrees), Wind Speed (in m/s), Air Pressure (in atm)" as features and "Active Power" as labels for the model to forecast upto 72 hours in Real Time!
 
 ## Dashboard
+We also have a Node-RED UI for real time anemometer readings of Wind speeds and Wind Directions of 4 metropolitan cities.
