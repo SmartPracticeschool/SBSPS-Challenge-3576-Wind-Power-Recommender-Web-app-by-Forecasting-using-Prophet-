@@ -1,6 +1,6 @@
 ## Solution for IBM Hack Challenge 3576
 
-# Power-Predictor App
+# Wind Prophecy App
 **By Team Epoch**
 
 ## Demo:
