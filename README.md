@@ -17,7 +17,7 @@ https://drive.google.com/file/d/1YFL7j_7qiVzWRClNsmMLaz8UE_zvA1zd/view?usp=shari
 5. Node-RED for making the UI of Dashboard of our app!
 
 ## Dataset
-https://www.nrel.gov/grid/wind-integration-data.html
+https://developer.nrel.gov/docs/wind/wind-toolkit/
 
 ## What does it do?
 This is a Web app for Real time Forecasting. We used the value in columns  “Wind Direction (in degrees), Wind Speed (in m/s), Air Pressure (in atm)" as features and "Active Power" as labels for the model to forecast upto 72 hours in Real Time!
